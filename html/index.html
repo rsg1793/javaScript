@@ -7,8 +7,36 @@
     <title>welcome to my page</title>
 </head>
 <body>
-    <h1>welcome to Javascript</h1>
+    <!-- Changing HTML content -->
+    <h1>Welcome to Javascript</h1>
     <p id="demo">JavaScript and Java are completely different languages</p>
    <button type="button" onclick='document.getElementById("demo").innerHTML="JavaScript was invented by Brendan Eich in 1995"'>click me</button>
+
+<!-- Changing Pictures -->
+   <h1>Our Pics</h1>
+   <img id="image" src='../images/Couple pic.jpeg' style="width:25%;">
+   <br>
+   <button type="button" onclick='document.getElementById("image").src="../images/Couple pic.jpeg"'>Couple Pic</button>
+   <button type="button" onclick='document.getElementById("image").src="../images/Anvesh.jpeg"'>Anvesh Pic</button>
+   <button type="button" onclick='document.getElementById("image").src="../images/ramya.jpeg"'>Ramya Pic</button>
+
+<!--Changing size-->
+<h1>Basics of JavaScript</h1>
+<p id="text-size">Js is fun</p>
+<button type="button" onclick='document.getElementById("text-size").style.fontSize="30px"'>Click Me</button>
+
+<!--Hiding the Text-->
+<h1> Iam a Movie Lover</h1>
+<p id="hide-text">RRR is my fav Movie</p>
+<button type="button" onclick="document.getElementById('hide-text').style.display='none'">Hide</button>
+
+<!--Change text color and size-->
+<p id="text-change">Anvesh and Ramya</p>
+<button type="button" onclick="document.getElementById('text-change').innerHTML === 'Anvesh loves Ramya' ?
+document.getElementById('text-change').innerHTML = 'Anvesh and Ramya' :
+document.getElementById('text-change').innerHTML = 'Anvesh loves Ramya'">Toggle</button>
+
+
+
 </body>
 </html>
