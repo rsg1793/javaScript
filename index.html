@@ -7,36 +7,35 @@
     <title>welcome to my page</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="./js/script.js"></script>
 </head>
 <body>
     <!-- Changing HTML content -->
     <h1>Welcome to JavaScript</h1>
     <p id="demo">JavaScript and Java are completely different languages</p>
-   <button class="btn btn-info" type="button" onclick='document.getElementById("demo").innerHTML="JavaScript was invented by Brendan Eich in 1995"'>click me</button>
+   <button class="btn btn-info" type="button" onclick=changeContent()>click me</button>
 
 <!-- Changing Pictures -->
    <h1>Our Pics</h1>
    <img id="image" src='./images/Couple pic.jpeg' style="width:25%;">
    <br>
-   <button class="btn btn-info" type="button" onclick='document.getElementById("image").src="./images/Couple pic.jpeg"'>Couple Pic</button>
-   <button class="btn btn-info" type="button" onclick='document.getElementById("image").src="./images/Anvesh.jpeg"'>Anvesh Pic</button>
-   <button class="btn btn-info" type="button" onclick='document.getElementById("image").src="./images/ramya.jpeg"'>Ramya Pic</button>
+   <button class="btn btn-info" type="button" onclick=changePicture1()>Couple Pic</button>
+   <button class="btn btn-info" type="button" onclick=changePicture()>Anvesh Pic</button>
+   <button class="btn btn-info" type="button" onclick=changePicture2()>Ramya Pic</button>
 
 <!--Changing size-->
 <h1>Basics of JavaScript</h1>
 <p id="text-size">Js is fun</p>
-<button class="btn btn-info" type="button" onclick='document.getElementById("text-size").style.fontSize="30px"'>Click Me</button>
+<button class="btn btn-info" type="button" onclick=sizeChange()>Click Me</button>
 
 <!--Hiding the Text-->
 <h1> Iam a Movie Lover</h1>
 <p id="hide-text">RRR is my fav Movie</p>
-<button class="btn btn-info" type="button" onclick="document.getElementById('hide-text').style.display='none'">Hide</button>
+<button class="btn btn-info" type="button" onclick= hideText()>Hide</button>
 
 <!--Change text color and size-->
 <p id="text-change">Anvesh and Ramya</p>
-<button class="btn btn-success" type="button" onclick="document.getElementById('text-change').innerHTML === 'Anvesh loves Ramya' ?
-document.getElementById('text-change').innerHTML = 'Anvesh and Ramya' :
-document.getElementById('text-change').innerHTML = 'Anvesh loves Ramya'">Toggle</button>
+<button class="btn btn-success" type="button" onclick=toggleSwitch()>Toggle</button>
 
 
 
